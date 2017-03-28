@@ -1,0 +1,40 @@
+package:
+  name: rednose
+  version: "1.2.2"
+
+source:
+  fn: rednose-1.2.2.tar.gz
+  url: https://pypi.python.org/packages/c7/d6/cbde752f95a7972c6ad0f896ad82d41891f5c88d7970543a6b3e24e37204/rednose-1.2.2.tar.gz
+  md5: 6cedd2c7f92a36e954f3a89ee74d1bfc
+
+build:
+  preserve_egg_dir: True
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - setuptools
+    - termstyle >=0.1.7
+    - colorama
+
+  run:
+    - python
+    - setuptools
+    - setuptools
+    - termstyle >=0.1.7
+    - colorama
+
+test:
+  # Python imports
+  imports:
+    - test_files
+
+  requires:
+    - six ==1.10.0
+
+about:
+  home: https://github.com/JBKahn/rednose
+  license: BSD License
+  summary: 'coloured output for nosetests'
+  license_family: BSD
