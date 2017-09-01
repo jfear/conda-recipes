@@ -1,0 +1,37 @@
+package:
+  name: geoparse
+  version: "1.0.1"
+
+source:
+  fn: GEOparse-1.0.1.tar.gz
+  url: https://pypi.python.org/packages/c1/13/c6c396b313a265102c5150cc2ec9a998b5b49b557815b51dff760d012c92/GEOparse-1.0.1.tar.gz
+  md5: 847bd3bc70d2bbe66339c7baf9554dc6
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy >=1.7
+    - pandas >=0.17
+    - wgetter >=0.6
+
+  run:
+    - python
+    - numpy >=1.7
+    - pandas >=0.17
+    - wgetter >=0.6
+
+test:
+  # Python imports
+  imports:
+    - GEOparse
+
+  requires:
+    - tox
+
+about:
+  home: https://github.com/guma44/GEOparse
+  license: BSD License
+  summary: 'Python library to access Gene Expression Omnibus Database (GEO)'
+  license_family: BSD
+

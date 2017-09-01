@@ -1,0 +1,22 @@
+package:
+  name: wgetter
+  version: "0.7"
+
+source:
+  fn: wgetter-0.7.tar.gz
+  url: https://pypi.python.org/packages/8e/ce/7f160ed9f0e16a5365bcbac1dbc6bad1631e9fc91610a444fbdebede3e8b/wgetter-0.7.tar.gz
+  md5: 9edbaeb1a14c3ca86dccf34fc4971bf5
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+about:
+  home: https://github.com/phoemur/wgetter
+  license: MIT License
+  summary: 'Another command line download utility written in python'
+  license_family: MIT
+
