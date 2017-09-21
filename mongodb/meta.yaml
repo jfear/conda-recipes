@@ -1,10 +1,10 @@
 package:
     name: mongodb
-    version: 3.4.1
+    version: 3.4.9
 source:
-    fn: mongodb-linux-x86_64-amazon-3.4.1.tgz
-    md5sum: 8f5ce8185e14ff54bde0984305e1833c
-    url: https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-3.4.1.tgz
+    fn: mongodb-linux-x86_64-rhel62-3.4.9.tgz
+    md5sum: c26630a07b46cfb1051bedf7f7362f0c
+    url: https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.4.9.tgz
 build: {}
 requirements:
     run:
