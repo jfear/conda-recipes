@@ -32,12 +32,14 @@ requirements:
     - python
     - setuptools
     - cloudpickle
-    - macfsevents
+    - macfsevents   # [osx]
+    - pyinotify     # [linux]
 
   run:
     - python
     - cloudpickle
-    - macfsevents
+    - macfsevents   # [osx]
+    - pyinotify     # [linux]
 
 test:
   # Python imports
