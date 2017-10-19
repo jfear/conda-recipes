@@ -1,0 +1,61 @@
+package:
+  name: macfsevents
+  version: "0.7"
+
+source:
+  fn: MacFSEvents-0.7.tar.gz
+  url: https://pypi.python.org/packages/f4/fb/59f72719e339f6209997414c6d0b7e1e1f96900dede3ec1cc24008471cc2/MacFSEvents-0.7.tar.gz
+  md5: 089d52d40a088651302967b1d13c3825
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch: python
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - macfsevents = macfsevents:main
+    #
+    # Would create an entry point called macfsevents that calls macfsevents.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+# test:
+  # Python imports
+  # imports:
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: https://github.com/malthe/macfsevents
+  license: MIT License
+  summary: 'Thread-based interface to file system observation primitives.'
+  license_family: MIT
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
