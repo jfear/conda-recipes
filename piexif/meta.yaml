@@ -1,0 +1,62 @@
+package:
+  name: piexif
+  version: "1.0.13"
+
+source:
+  fn: piexif-1.0.13.zip
+  url: https://pypi.python.org/packages/e5/60/e7eb47ebb5ff5c14c9346e3124e119b64219936e63988e610ef99147d6c1/piexif-1.0.13.zip
+  md5: fc5a27c07f2aa8f95b1b19fd6229be84
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch: python
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - piexif = piexif:main
+    #
+    # Would create an entry point called piexif that calls piexif.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - piexif
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: https://github.com/hMatoba/Piexif
+  license: MIT License
+  summary: 'To simplify exif manipulations with python. Writing, reading, and more...'
+  license_family: MIT
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
